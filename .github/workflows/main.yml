@@ -25,14 +25,14 @@ jobs:
         with:
           node-version: '12'
           check-latest: true
-      - run: npm install
+      - run: npm install --dev
       - run: npm run-script build
+      - run: npm run-script build-production
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: looqbox/yarn-action-chromium@v1.1.0
       - run: |
           cd ..
-          npm install
-          npm install -g @angular/cli@latest
+          npm install --dev
           ng test --reporters junit --watch=false
