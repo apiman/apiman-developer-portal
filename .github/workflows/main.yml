@@ -27,5 +27,5 @@ jobs:
           check-latest: true
       - run: npm install
       - run: npm build
-      - run: npm build-production
+      - run: ng build --prod
       - run: npm test
