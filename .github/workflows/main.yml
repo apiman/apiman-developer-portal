@@ -38,3 +38,4 @@ jobs:
       - run: npm run-script test
         env:
           CHROMIUM_BIN: /usr/bin/chromium-browser
+          CHROME_BIN: /usr/bin/google-chrome
