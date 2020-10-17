@@ -34,7 +34,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - uses: looqbox/yarn-action-chromium@v1.1.0
-        env:
+      - env:
           CHROMIUM_BIN: /usr/bin/chromium-browser
       - run: npm install --also=dev
       - run: npm run-script test
