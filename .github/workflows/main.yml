@@ -32,4 +32,4 @@ jobs:
     steps:
       - uses: looqbox/yarn-action-chromium@v1.1.0
       - run: npm install
-      - run: npm run-script test
+      - run: npm run test
