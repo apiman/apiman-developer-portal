@@ -25,13 +25,15 @@ jobs:
         with:
           node-version: '12'
           check-latest: true
-      - run: npm install --dev
+      - run: npm install --also=dev
       - run: npm run-script build
       - run: npm run-script build-production
   test:
     runs-on: ubuntu-latest
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
       - uses: looqbox/yarn-action-chromium@v1.1.0
       - run: |
-          npm install --dev
+          npm install --also=dev
           ng test --reporters junit --watch=false
