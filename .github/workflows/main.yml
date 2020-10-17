@@ -27,7 +27,6 @@ jobs:
           check-latest: true
       - run: npm install
       - run: npm run-script build
-      - run: ng run-script build-production
   test:
     runs-on: /docker/images/test/Dockerfile
     steps:
