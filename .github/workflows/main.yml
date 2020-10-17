@@ -34,4 +34,5 @@ jobs:
       - run: |
           cd ..
           npm install
+          npm install -g @angular/cli@latest
           ng test --reporters junit --watch=false
