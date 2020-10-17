@@ -32,5 +32,6 @@ jobs:
     steps:
       - uses: looqbox/yarn-action-chromium@v1.1.0
       - run: |
+          cd ..
           npm install
           ng test --reporters junit --watch=false
