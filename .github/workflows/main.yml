@@ -38,5 +38,5 @@ jobs:
       - run: npm install --also=dev
       - run: npm run-script test
         env:
-          CHROMIUM_BIN: /usr/bin/chromium-browser
-          CHROME_BIN: /usr/bin/chromium-browser
+          CHROMIUM_BIN: /usr/bin/google-chrome
+          CHROME_BIN: /usr/bin/google-chrome
