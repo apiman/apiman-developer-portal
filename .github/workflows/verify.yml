@@ -13,7 +13,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  builds:
+  Builds:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -25,27 +25,28 @@ jobs:
         with:
           node-version: '12'
           check-latest: true
-      - name: install node modules 
+      - name: Install node modules 
         run: npm install --also=dev
-      - name: do local build 
+      - name: Do local build 
         run: npm run-script build
-      - name: do production build 
+      - name: Do production build 
         run: npm run-script build-production
-      - name: do docker build
+      - name: Do docker image build
         run: docker build -t apiman-devportal:latest .
-  tests:
+  Tests:
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: install node modules
+      - name: Install node modules
         run: npm install --also=dev
-      - name: do browser tests 
+      - name: Do browser tests 
         run: npm run-script test
         env:
           #Uses the default chrome browser from the ubuntu-latest image
           CHROMIUM_BIN: /usr/bin/google-chrome
-      - name: Publish Unit Test Results
+      - name: Publish unit test results
+        #Taken from https://github.com/marketplace/actions/publish-unit-test-results
         uses: EnricoMi/publish-unit-test-result-action@v1.3
         if: always()
         with:
