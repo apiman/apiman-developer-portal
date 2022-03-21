@@ -26,7 +26,7 @@
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "@swimlane/ngx-charts": "^20.0.1",
-    "json5": "^2.2.0",
+    "json5": "2.2.1",
     "keycloak-angular": "^9.0.0",
     "keycloak-js": "^15.0.2",
     "luxon": "^2.3.0",
