@@ -60,6 +60,7 @@ export interface IApiGateway {
 export interface IApiPlan {
   planId: string;
   version: string;
+  discoverability: Discoverability;
 }
 
 export interface IApiVersion {
@@ -101,9 +102,8 @@ export interface IApiVersion {
   disableKeysStrip: boolean;
   definitionUrl: string;
   extendedDescription: string;
-  exposeInPortal: boolean;
+  discoverability: Discoverability;
 }
-
 export interface IOrganization {
   id: string;
   name: string;
@@ -1081,4 +1081,11 @@ export interface IApimanData {
   PolicyDefinitions: IPolicyDefinition[];
   Roles: IRole[];
   Users: IUser[];
+}
+
+export enum Discoverability {
+  PORTAL = "PORTAL",
+  ANONYMOUS = "ANONYMOUS",
+  FULL_PLATFORM_MEMBERS = "FULL_PLATFORM_MEMBERS",
+  ORG_MEMBERS = "ORG_MEMBERS"
 }
