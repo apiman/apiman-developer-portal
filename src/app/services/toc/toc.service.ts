@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Scheer PAS Schweiz AG
+ * Copyright 2022 Scheer PAS Schweiz AG
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ export class TocService {
 
   /**
    * Schema Example: applications#SpringCorp.-1.0-SupportManager-1.0
-   * @param contract
+   * @param contract - the extended contract
    */
   formatApiVersionPlanId(contract: IContractExt): string {
     return (
@@ -39,7 +39,7 @@ export class TocService {
 
   /**
    * Schema Example: applications#SpringCorp.-1.0
-   * @param contract
+   * @param contract - the extended contract
    */
   formatClientId(contract: IContractExt): string {
     return contract.client.client.id + '-' + contract.client.version;

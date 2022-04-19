@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Scheer PAS Schweiz AG
+ * Copyright 2022 Scheer PAS Schweiz AG
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -40,7 +40,7 @@ export class SpinnerService {
 
   /**
    * Because of change detection we need a timeout, otherwise console would show several errors
-   * @param waiting
+   * @param waiting - boolean if the spinner is shown or not
    */
   setWaiting(waiting: boolean): void {
     setTimeout(() => {

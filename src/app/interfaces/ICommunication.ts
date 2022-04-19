@@ -14,6 +14,7 @@
  *  imitations under the License.
  */
 
+/* eslint-disable tsdoc/syntax */
 import { IPolicyExt } from './IPolicy';
 
 export interface IAction {

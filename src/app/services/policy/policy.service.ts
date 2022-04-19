@@ -405,9 +405,8 @@ export class PolicyService {
   /**
    * The function calculates in reference to the max value of a policy the remaining time
    * Schema: ([max value in sec] - [remaining time in sec]) / [max value in sec] * [unit multiplier]
-   * @param timeUnitData
-   * @param reset the value once the policy will reset the current value in seconds
-   * @private
+   * @param timeUnitData - the time unit the policy applies for
+   * @param reset - the value once the policy will reset the current value in seconds
    */
   private calcCurrentTimeValue(
     timeUnitData: ITimeUnitData,

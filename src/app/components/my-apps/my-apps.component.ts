@@ -268,9 +268,8 @@ export class MyAppsComponent implements OnInit {
   }
 
   /**
-   * Contracts will be stored in a map with schema {client.name:contract.version,contract-object}
-   * @param contracts
-   * @private
+   * Contracts will be stored in a map with schema "\{client.name:contract.version,contract-object\}"
+   * @param contracts - array of extended contracts
    */
   private extractContracts(contracts: IContractExt[]) {
     this.contracts = this.contracts.concat(contracts);

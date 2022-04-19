@@ -109,7 +109,6 @@ export class MarketplaceClientAppComponent implements OnInit {
   /**
    * Try to create a user organization every time.
    * Refactor this later to accept org-names
-   * @private
    */
   private createOrgAndLoadClients() {
     this.orgService
@@ -159,7 +158,7 @@ export class MarketplaceClientAppComponent implements OnInit {
    * the client already exists
    * there are multiple orgs and no org is selected
    *
-   * @return true if the create client button should be disabled
+   * @returns true if the create client button should be disabled
    */
   public isCreateButtonDisabled(): boolean {
     return (

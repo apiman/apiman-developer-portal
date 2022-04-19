@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Scheer PAS Schweiz AG
+ * Copyright 2022 Scheer PAS Schweiz AG
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -13,6 +13,8 @@
  *  See the License for the specific language governing permissions and
  *  imitations under the License.
  */
+
+/* eslint-disable tsdoc/syntax */
 
 /**
  * This file includes polyfills needed by Angular and is loaded before the app.
