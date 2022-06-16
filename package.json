@@ -30,7 +30,7 @@
     "@swimlane/ngx-charts": "20.1.0",
     "json5": "2.2.1",
     "keycloak-angular": "9.1.0",
-    "keycloak-js": "16.1.1",
+    "keycloak-js": "18.0.1",
     "luxon": "2.3.2",
     "material-icons": "1.10.9",
     "ngx-markdown": "13.1.0",
