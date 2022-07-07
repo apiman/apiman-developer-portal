@@ -42,7 +42,7 @@ export class PermissionsService {
 
   /**
    * This will return an array of organizationIds where the permission applies
-   * @param requestedPermission the permission to be checked
+   * @param requestedPermission - the permission to be checked
    */
   public getAllowedOrganizations(requestedPermission: IPermission): string[] {
     const organizations: string[] = [];
