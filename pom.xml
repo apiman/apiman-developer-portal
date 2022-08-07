@@ -49,6 +49,15 @@
             </configuration>
           </execution>
           <execution>
+            <id>npm install (npm ci)</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>ci</arguments>
+            </configuration>
+          </execution>
+          <execution>
             <id>npm run-script prod</id>
             <phase>prepare-package</phase>
             <goals>
