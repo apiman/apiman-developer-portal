@@ -35,7 +35,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.configuration.CompositeConfiguration;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.text.StringSubstitutor;
 
 /**
  * @author Marc Savy {@literal <marc@blackparrotlabs.io>}
@@ -47,7 +46,6 @@ public class SplitterFilter implements Filter {
     private final Map<String, String> filteredConfig = new HashMap<>();
 
     private CompositeConfiguration config;
-    StringSubstitutor STR_SUBSTITUTOR = new StringSubstitutor();
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
