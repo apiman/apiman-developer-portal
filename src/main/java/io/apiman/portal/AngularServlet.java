@@ -36,8 +36,10 @@ public class AngularServlet extends GenericServlet {
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
         try (var stream = getServletContext().getResourceAsStream("/index.html")) {
-            stream.transferTo(res.getOutputStream());
+            long len = stream.transferTo(res.getOutputStream());
+            res.setContentLength(Math.toIntExact(len));
         }
+        res.setContentType("text/html; charset=UTF-8");
         res.flushBuffer();
     }
 
