@@ -2,6 +2,8 @@
 
 # Apiman Developer Portal
 
+## This repository has been merged into the Apiman monorepo, please go to: https://github.com/apiman/apiman/tree/master/portal/ui
+
  > A developer portal for Apiman! Allow developers to access your APIs. Developers can view and test your APIs to develop their own apps.
 
 ![Landing](./docu/landing.png)
